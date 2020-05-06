@@ -17,7 +17,7 @@ public static void main(String[] args) throws InterruptedException{
 
         Integer j = 1;
 
-        for ( int i = 0 ; i < 500000 ; i ++) {
+        for ( int i = 0 ; i < 5000000 ; i ++) {
 
             j = j + 1;
 
@@ -25,7 +25,7 @@ public static void main(String[] args) throws InterruptedException{
 
     long endTime   = System.nanoTime();
     long totalTime = endTime - startTime;
-    System.out.println("Time taken by int : " + totalTime);
+    System.out.println("Time taken by Integer : " + totalTime);
 
     // Measure time taken for operations on int
     startTime = System.nanoTime();
