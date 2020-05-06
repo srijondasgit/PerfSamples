@@ -9,21 +9,36 @@ public class Ex2CompPriRef {
 
 public static void main(String[] args) throws InterruptedException{
 
-    RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
+    // Measure time taken for operations on Integer
+    long startTime = System.nanoTime();
 
-    String jvmName = bean.getName();
-    System.out.println("Name = " + jvmName);
+        Integer j = 1;
 
-    long pid = Long.valueOf(jvmName.split("@")[0]);
-    System.out.println("PID  = " + pid);
+        for ( int i = 0 ; i < 500000 ; i ++) {
 
-    System.out.println("Please monitor from jConsole");
+            j = j + 1;
 
-    for ( int i = 0 ; i < 500 ; i ++) {
-        List li = new ArrayList<String>(100);
-        //li = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
-        Thread.sleep(3000);
-    }
+        }
+
+    long endTime   = System.nanoTime();
+    long totalTime = endTime - startTime;
+    System.out.println("Time taken by Integer : " + totalTime);
+
+    // Measure time taken for operations on int
+    startTime = System.nanoTime();
+
+        int k = 1;
+
+        for ( int i = 0 ; i < 5000000 ; i ++) {
+
+            k = k + 1;
+
+        }
+
+    endTime   = System.nanoTime();
+    totalTime = endTime - startTime;
+    System.out.println("Time taken by int : " + totalTime);
+
 
 }
 

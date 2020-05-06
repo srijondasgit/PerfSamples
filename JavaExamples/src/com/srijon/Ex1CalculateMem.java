@@ -6,17 +6,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ex1CalculateMem extends Ex1aExtendThis { //implements Ex1aImplThat{
 
-    //public List li;
-    void addChar( Integer i){
+// Calculates the memory usage of an array
+
+public class Ex1CalculateMem extends Ex1aExtendThis implements Ex1aImplThat{
+
+
+    void addDeclAbstr( Integer i){
         this.li.add(i);
 
     }
 
-   /* public void doSomething(int i){
+    public void addDeclInterface(int i){
         this.li.add(i);
-    }*/
+    }
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -39,16 +42,9 @@ public class Ex1CalculateMem extends Ex1aExtendThis { //implements Ex1aImplThat{
 
         ex1.li = new ArrayList<Integer>();
 
-        for (int i = 0; i < 10000000; i++) {
-            //4 bytes per reference variable, actual
-            //List li = new ArrayList<Integer>();
-            //li = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
-//            for ( int j = 0; j < 100; j++){
-            //ex1.li.add(i);
-            ex1.addChar(i);
-            //ex1.doSomething(i);
-//            }
-//            Thread.sleep(   5000);
+        for (int i = 0; i < 5000000; i++) {
+            ex1.addDeclAbstr(i);
+            ex1.addDeclInterface(i);
         }
 
         System.out.println("done populating : " + ex1.li.size());
