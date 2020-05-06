@@ -1,8 +1,5 @@
 package com.srijon;
 
-import sun.jvm.hotspot.utilities.WorkerThread;
-import com.srijon.Ex4MultithreadW;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
