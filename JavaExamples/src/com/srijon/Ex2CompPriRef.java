@@ -22,7 +22,7 @@ public static void main(String[] args) throws InterruptedException{
 
     long endTime   = System.nanoTime();
     long totalTime = endTime - startTime;
-    System.out.println("Time taken by Integer : " + totalTime);
+    System.out.println("Time taken by int : " + totalTime);
 
     // Measure time taken for operations on int
     startTime = System.nanoTime();
