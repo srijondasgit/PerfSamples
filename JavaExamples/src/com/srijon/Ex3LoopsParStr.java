@@ -2,6 +2,9 @@ package com.srijon;
 
 import java.util.ArrayList;
 import java.util.List;
+
+// Parallel streams were supposed to help performance by using map reduce
+// Foreach loops can outperform Parallel streams as fork joins could take time
 public class Ex3LoopsParStr {
     static List < Integer > myList = new ArrayList < > ();
     public static void main(String[] args) {

@@ -5,6 +5,9 @@ import java.lang.management.RuntimeMXBean;
 import java.util.ArrayList;
 import java.util.List;
 
+// Main focus it to measure the time taken
+// Primitives reside on the stack when part of method body or main
+// Reference variables and wrapper classes reside in heap
 public class Ex2CompPriRef {
 
 public static void main(String[] args) throws InterruptedException{

@@ -8,17 +8,18 @@ import java.util.List;
 
 
 // Calculates the memory usage of an array
-
+// Extends an abstract class and implements an interface
+// Quick example to demonstrate a memory leak like situation
 public class Ex1CalculateMem extends Ex1aExtendThis implements Ex1aImplThat{
 
 
     void addDeclAbstr( Integer i){
-        this.li.add(i);
+        this.al.add(i);
 
     }
 
     public void addDeclInterface(int i){
-        this.li.add(i);
+        this.al.add(i);
     }
 
 
@@ -40,14 +41,14 @@ public class Ex1CalculateMem extends Ex1aExtendThis implements Ex1aImplThat{
 
         Ex1CalculateMem ex1 = new Ex1CalculateMem();
 
-        ex1.li = new ArrayList<Integer>();
+        ex1.al = new ArrayList<Integer>();
 
         for (int i = 0; i < 5000000; i++) {
             ex1.addDeclAbstr(i);
             ex1.addDeclInterface(i);
         }
 
-        System.out.println("done populating : " + ex1.li.size());
+        System.out.println("done populating : " + ex1.al.size());
         Thread.sleep(500000);
 
     }
