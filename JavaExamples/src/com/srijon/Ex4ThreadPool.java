@@ -16,5 +16,6 @@ public class Ex4ThreadPool {
         while (!executor.isTerminated()) {   }
 
         System.out.println("Finished all threads");
+
     }
 }
