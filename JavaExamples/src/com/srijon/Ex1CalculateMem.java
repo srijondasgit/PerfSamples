@@ -10,6 +10,7 @@ import java.util.List;
 // Calculates the memory usage of an array
 // Extends an abstract class and implements an interface
 // Quick example to demonstrate a memory leak like situation
+// Initial size of array list set to zero
 public class Ex1CalculateMem extends Ex1aExtendThis implements Ex1aImplThat{
 
 
