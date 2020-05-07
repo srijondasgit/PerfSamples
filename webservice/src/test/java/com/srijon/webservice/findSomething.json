@@ -1,0 +1,38 @@
+{
+	"id": "46ba8abf-f782-e691-d3c2-7477c08073cc",
+	"name": "search",
+	"description": "",
+	"order": [
+		"8ff5b088-1f43-ccbe-5f84-67e80a40edd5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1588866381805,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "8ff5b088-1f43-ccbe-5f84-67e80a40edd5",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "46ba8abf-f782-e691-d3c2-7477c08073cc",
+			"data": null,
+			"dataMode": "params",
+			"name": "basic search",
+			"description": "basic search of arrays",
+			"descriptionFormat": "html",
+			"time": 1588866387859,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
